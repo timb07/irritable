@@ -28,7 +28,7 @@ Irritable implements broken iterators called irritables
 Features
 --------
 
-Iterators are defined in the docs_ ; the definition includes what
+Iterators are defined in the docs_; the definition includes what
 constitutes a broken implementation:
 
     4.5. Iterator Types
