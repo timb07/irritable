@@ -1,0 +1,16 @@
+language: python
+python:
+- 3.6
+- 3.5
+install: pip install -U tox-travis
+script: tox
+deploy:
+  provider: pypi
+  distributions: sdist bdist_wheel
+  user: timb07
+  password:
+    secure: vmU2Kd28WHLXnY8IAuiS7wFlLLSn89aiW/zypOCylhZ9MdJWoiTHS9+uAelQ8ihETDeD74OTp8I8YYATgp0tTiEP76z6/zHPbZBiqMFW/xBhZBUiWW7UWFKK1Hmu6rolajeUlmsXh3uFsFd0QOA7CXzay2OwQBlCcQ/l5hBfyeA5ygQ2Gv12a/AgwcCEnI2im+xKxW8v5AlqYNYFXNcHAMHbtBI6Q75UI5Ygqycaa/ZLpombkZ1RJsnyJE506NkCI4JlJANngzbsVOM3dfYHLAvbxkZ3gske0T1bqDtUpctw1wRaUqY6/aYOEtW5aXcSh7zWpHNBAU6MDmXsGizrpXz2W7UYtBqt/Ns7Cp4uyRCBcWPJprJVxDm+rlDRRGhjTGuA56znwt0RYycK2szNN/9Ml6hvMzasrL6XTwrEHxk8L0Rs6KPrgLVERXJazzaSmhLVm8N8Fh0YxzFldvsZcVLB3vXr05IXsAsY0DDNjp6xgtwOj1kqdN8d+7JR62e4wstOqMjRPfv7nJRqXosPlBTmhYhVtZ+v/D00l6rz2/tWSUqNv5o59BmgcUo/asbf70n9p5YvxZf/Bap+K3ScnBeVoXyqjgNrNWqG++d8JQVoWGjtHbLWq+s16siqWSfZqBDUNNf3EMhaCg5b7wGcA8vK0wvopja5jGZqeE87L/Y=
+  on:
+    tags: true
+    repo: timb07/irritable
+    python: 3.6
