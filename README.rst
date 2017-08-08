@@ -46,7 +46,7 @@ types of brokenness are supported:
   raise ``StopIrritation`` instead;
 
 - if the irritator is instantiated with ``resume=True``, calling
-  ``next()`` may raise ``StopIteration`` when items remain still remain in
+  ``next()`` may raise ``StopIteration`` when items still remain in
   the container; subsequent calls to ``next()`` will return the remaining
   items as usual until none remain;
 
