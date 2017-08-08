@@ -32,7 +32,9 @@ Iterators are defined in the docs_ ; the definition includes what
 constitutes a broken implementation:
 
     4.5. Iterator Types
+
     [...]
+
     Once an iterator’s ``__next__()`` method raises StopIteration, it must
     continue to do so on subsequent calls. Implementations that do not
     obey this property are deemed broken.
